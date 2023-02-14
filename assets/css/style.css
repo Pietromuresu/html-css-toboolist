@@ -18,15 +18,21 @@ body {
 main, .container {
 margin: 0% 15%;
 background-color: white;
-
-
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top: solid 3px #F6F8F9;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border: solid 3px #F6F8F9;
 }
+/* /Formattazione pagina */
 
+/* Header */
 header img {
   vertical-align: bottom;
 
 }
-/* Header */
+
 header h1 {
   display: inline-block;
   font-size: 40px;
@@ -46,9 +52,6 @@ header {
 .menu-bottoni {
   border-bottom: solid 2px #F6F8F9;
   padding: 10px 30px; 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top: solid 3px white;
   margin-left: 20px;
 
 }
