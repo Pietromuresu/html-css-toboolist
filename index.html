@@ -11,61 +11,81 @@
   <!-- Header -->
     <header>
       <img src="assets/immagini/Logo.png" alt="logo" title="Boolean">
-      <h1> Toboolist</h1>
+      <span class="logo-header"> Toboolist </span>
     </header>
-  <div class="container"></div>
+  
   <main>
+    <div class="container"></div>
       <!-- menù con bottoni -->
         <section class="menu-bottoni">
-          <div class="add-task" >Add Tasks</div>
-          <div class="add-section">Add Section</div>
+          <button class="add-task" >Add Tasks</button>
+          <button class="add-section">Add Section</button>
         </section>
       <!--/ Menù a bottoni  -->
 
       <!-- Lista tasks  -->
     <section class="list">
-      <div> 
-        <h2> <span>&#9662 </span>  New Task</h2>
-        <p>
-        <span class="check"> &#10004; </span> Quarterly   Newsletter <span class="editorial"> Editorial </span> 
-        </p>
-      </div> 
-      <div>
-        <h2> <span>&#9662 </span> Today</h2>
-        <p>
-          <span class="check">&#10004;</span>  Recruiting blog post <span class="editorial"> Editorial </span> 
-        </p>
-        <p>
-          <span class="check">&#10004;</span> Mobile app launch <span class="q1-goals"> Q1-Goals </span> 
-        </p>
-        <p>
-         <span class="cross">&#10060;</span>Interview Jhon H. <span class="recruiting"> Recruiting</span> 
-        </p>
-        <p>
-          <span class="check">&#10004;</span> Summit update to mobile storefronts <span class="mobile"> Mobile</span> 
-        </p>
-      </div>
-      <div>
-
-        <h2> <span>&#9662 </span>  Upcoming</h2>
-        <p>
-          <span class="cross" >	&#10060;</span>  Schedule meeting with Alex 
-        </p>
-        <p>
-          <span class="check">&#10004;</span>  Homepage refresh <span class="website"> Website</span> 
-        </p>
-        <p> 
-          <span class="check">&#10004;</span> Onboard new sales team members <span class="sales"> Sales </span> </p>
-        <p>
-          <span class="check">&#10004;</span> Review editorial calendar <span class="editorial"> Editorial </span>
-        </p>
-
-      </div>
+      <ul>
+        <li>
+          <h3>New Task</h3>
+          <ul>
+            <li>
+               <span class="box check"></span>
+              <span>Quarterly   Newsletter</span>
+              <span class=" tag editorial"> Editorial </span> 
+            </li>
+            <li>
+              <span class="box check"></span> 
+              <span>Recruiting blog post</span>
+              <span class="tag editorial"> Editorial </span> 
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="title">Today</h3>
+          <ul>
+            <li>
+              <span class="check box "></span> 
+              <span>Recruiting blog post</span>
+              <span class="tag editorial"> Editorial </span> 
+            </li>
+            <li>
+              <span class="box check"></span> Mobile app launch <span class="tag q1-goals"> Q1-Goals </span> 
+            </li>
+            <li>
+              <span class="box cross"></span>
+              Interview Jhon H. 
+                <span class="tag recruiting"> Recruiting</span> 
+            </li>
+            <li>
+              <span class="box check"></span> Summit update to mobile storefronts <span class="tag mobile"> Mobile</span> 
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Upcoming</h3>
+          <ul>
+            <li>
+              <span class="box cross" >	</span>  Schedule meeting with Alex 
+            </li>
+            <li>
+              <span class="box check"></span>  Homepage refresh <span class="tag website"> Website</span> 
+            </li>
+            <li>
+              <span class="box check"></span> Onboard new sales team members <span class="tag sales"> Sales </span>
+            </li>
+            <li>
+              <span class="box check"></span> Review editorial calendar <span class="tag editorial"> Editorial </span>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
     </section>
-  </main>
-
   </div>
+</main>
+
+  
 
 
 </body>

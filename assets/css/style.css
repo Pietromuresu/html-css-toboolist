@@ -15,7 +15,7 @@ body {
   
 }
 
-main, .container {
+ main, .container {
 margin: 0% 15%;
 background-color: white;
 border-top-left-radius: 5px;
@@ -28,15 +28,21 @@ border: solid 3px #F6F8F9;
 /* /Formattazione pagina */
 
 /* Header */
-header img {
-  vertical-align: bottom;
+.logo-header {
+  font-size: 40px;
+  vertical-align: middle;
+  font-weight: 800;
+}
 
+header img {
+  vertical-align: middle;
+ 
 }
 
 header h1 {
   display: inline-block;
-  font-size: 40px;
-  
+  font-size: 30px;
+ 
 
 }
 
@@ -52,28 +58,28 @@ header {
 .menu-bottoni {
   border-bottom: solid 2px #F6F8F9;
   padding: 10px 30px; 
-  margin-left: 20px;
+ 
 
 }
 
+.menu-bottoni button:first-child {
+  margin-left: 50px;
+}
 
-.menu-bottoni div {
-  font-family:  Arial, Helvetica, sans-serif;;
-  border-radius: 3px;
-  padding: 5px 7px;
+.menu-bottoni button {
+  border-radius: 5px;
+  padding: 5px 10px;
   font-size: 10px;
   margin-bottom: 3px;
-  display: inline-block;
+  height: 25px;
+  
 }
-
-
-
 
 .add-task {
    background-color: #46ADF1;
   color: white;
   border: 1px solid #46ADF1 ;
-  }
+  margin-left: 50px;}
 
 .add-section {
   background-color: white;
@@ -84,22 +90,35 @@ header {
 /* /Menù a bottoni  */
 
 /* Lista Tasks */
-.list {
- padding: 50px;
- border-bottom-left-radius: 5px;
- border-bottom-right-radius: 5px;
- border: solid 3px white;
+ul, li{
+list-style: none;
 }
 
-.list div {
+ul li h3 {
+  color: #434750;
+}
+
+ul li h3::before {
+  content: "\25BC";
+}
+
+.list {
+ padding: 50px;
+
+}
+
+.list ul {
   margin-bottom: 40px;
 }
 
-p {
+li {
   margin: 20px;
 }
 
-p span {
+ul li h3::before{
+  content: \25BC;
+}
+.tag {
   
   border-radius: 12px;
   padding: 7px 10px;
@@ -131,25 +150,31 @@ p span {
   background-color: #B0C925 ;
 }
 
-.list h2 {
-  color: #434750;
-}
 
-.cross{
-border:  1px solid #E73C35;
-color: #E73C35;
-padding: 5px;
-border-radius: 50%;
-font-size: 9px;
-padding: 3px;
-}
 
-.check {
-  border:  1px solid #8FD3C5;
-  color: #8FD3C5;
-  font-size: 11px;
-  padding: 3px;
+
+.box::before {
+  border: 1px solid;
+  padding: 2px;
+  font-size: 13px;
   border-radius: 50%;
+   
+} 
+
+.check::before {
+  content: "\2713";
+  border-color:  green;
+
 }
+
+.cross::before {
+  content: "\2715";
+  border-color: red;
+}
+
+
+
+
+
 
 /* /Lista Tasks */
